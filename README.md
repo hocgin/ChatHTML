@@ -1,5 +1,5 @@
 ## Chat
-> This is `Chat` about WebSocket.
+> This is `Chat`.
 
 ## Update
 > **1.0.1** 2016年08月17日01:11:17
