@@ -10,6 +10,7 @@
 - 支持文件发送
 - 支持快捷键
 - and so on
+
 > **1.0.2** 2016年08月19日19:05:53
 
 - Maven化
@@ -21,7 +22,7 @@
 ## Structure [pom.xml](https://github.com/hocgin/ChatHTML/blob/master/pom.xml)
 - Nutz-nutz-1.r.57.r3
 - mysql-connector-java-5.1.37
-- JLog
+- [JLog](https://github.com/hocgin/JLog)
 - gson-2.7
 - druid-1.0.16
 - tomcat 8.0.36

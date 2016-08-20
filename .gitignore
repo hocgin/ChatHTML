@@ -69,3 +69,8 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+libs/
+src/test/
+target/classes/in/
+target/generated-sources/
+web/WEB-INF/tmp/
