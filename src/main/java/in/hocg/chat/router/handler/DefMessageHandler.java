@@ -1,4 +1,4 @@
-package in.hocg.chat.handler;
+package in.hocg.chat.router.handler;
 
 import in.hocg.chat.actions.SocketAction;
 import in.hocg.chat.router.core.MessageHandler;
@@ -26,7 +26,7 @@ public class DefMessageHandler implements MessageHandler {
         replyMessage.setType(message.getType());
         replyMessage.setReceiverType(message.getSenderType());
         replyMessage.setReceiver(message.getSender());
-        for (SocketAction socket : SocketAction.room(message.getReceiver())) { // 发送
+        for (SocketAction socket : SocketAction.room(replyMessage.getSender())) { // 发送
             try {
                 socket.sendMessage(replyMessage.toJson());
             } catch (IOException e) {
