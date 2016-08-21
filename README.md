@@ -31,6 +31,6 @@
 入口: http://localhost:8080/c/{room}/{name}
 
 ## Screenshot
-![image](http://7xs6lq.com1.z0.glb.clouddn.com/chat-3.png)
-![image](http://7xs6lq.com1.z0.glb.clouddn.com/chat-2.png)
-![image](http://7xs6lq.com1.z0.glb.clouddn.com/ChatHTML1.png)
+![image](screenshot/1.png)
+![image](screenshot/2.png)
+![image](screenshot/3.png)
