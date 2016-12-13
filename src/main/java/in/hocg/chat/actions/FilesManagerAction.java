@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
-import static org.eclipse.jdt.internal.compiler.util.Util.UTF_8;
 
 /**
  * (๑`灬´๑)
@@ -81,7 +80,7 @@ public class FilesManagerAction extends BaseAction<FilesService> {
     public Object visitor(String uuid, HttpServletResponse response) throws UnsupportedEncodingException {
         FilesPojo filesPojo = service().fetch(uuid);
         if (filesPojo != null) {
-            response.setHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(filesPojo.getFormerly(), UTF_8));
+            response.setHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(filesPojo.getFormerly(), "UTF-8"));
             File file = new File(String.format("%s/%s", filesPojo.getKeepPath(), filesPojo.getNow()));
             if (file.exists()) {
                 return file;
